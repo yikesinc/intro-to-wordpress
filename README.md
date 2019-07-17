@@ -1,2 +1,2 @@
-# intro-to-wordpress
-Curriculm for a general intro to WordPress class.
+# Introduction to WordPress
+Curriculum for a general intro to WordPress workshop.

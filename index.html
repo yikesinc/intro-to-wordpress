@@ -1,0 +1,529 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Introduction to WordPress</title>
+
+		<meta name="description" content="The slidedeck for a general intro to WordPress class">
+		<meta name="author" content="YIKES, Inc.">
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/yikes.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/monokai.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!-- FontAwesome -->
+		<script defer src="js/all.min.js"></script> 
+	</head>
+
+	<body>
+
+		<div class="reveal">
+			<div class="slides">
+
+				<section id="beginning-slide">
+					<h1>Intro to WordPress</h1>
+
+					<img src="img/wordpress-logo.png" class="plain max-300" alt="">
+				</section>
+
+
+				<section>
+					<h2>What is WordPress?</h2>
+					<blockquote>
+						WordPress is free web software you can use to create and manage a website or blog.
+					</blockquote>
+				</section>
+				
+				<section>
+					<h2>WordPress is</h2>
+					<h3>Popular</h3>
+					<p>
+						WordPress is the <a href="http://w3techs.com/technologies/overview/content_management/all" target="_blank">#1 content management system in the world (60.9% marketshare)</a>. 
+					</p>
+				</section>
+				
+				<section>
+					<h2>WordPress is</h2>
+					<h3>Popular</h3>
+
+					<ul>
+						<li>WordPress is used by <a href="http://w3techs.com/technologies/overview/content_management/all" target="_blank">34%</a> of sites on the web.</li>
+						<li>WordPress 5.2 has been <a href="http://wordpress.org/download/counter/" target="_blank">downloaded over 33 million times</a></li>
+					</ul>
+				</section>
+				
+				<section>
+					<h2>WordPress is</h2>
+					<h3>Free, open source, web-based software</h3>
+					<p>
+						WordPress core software is built by hundreds of community volunteers. People all around the word contribute to WordPress by either submitting bugfixes, testing, designing or writing code for the software.
+					</p>
+				</section>
+				
+				<section>
+					<h2>WordPress is</h2>
+					<h3>A website building framework</h3>
+					<p>
+						WordPress is a platform for building and designing a website.
+					</p>
+				</section>
+				
+				<section>
+					<h2>WordPress is</h2>
+					<h3>A content management system</h3>
+					<p>
+						WordPress allows site owners to manage their site content via an easy-to-use admin.
+					</p>
+				</section>
+				
+				<section>
+					<h2>WordPress.org vs. WordPress.com</h2>
+					<ul>
+						<li><strong>WordPress.org</strong> - Web software used to build a website on a hosting account with a domain name. Sites can be built and modified using themes, plugins or custom code</li> <br />
+
+						<li><strong>WordPress.com</strong> - A free blogging service that allows people to create a blog hosted on WordPress.com's servers. Hosting is free (although there are some for-pay add-ons), theme choices are limited, plugins can not be installed and code can not be modified</li>
+					</ul>
+					
+					<a href="http://www.wpbeginner.com/beginners-guide/self-hosted-wordpress-org-vs-free-wordpress-com-infograph/?display=wide" target="_blank">
+						<i class="fa fa-info-circle" aria-hidden="true"></i>
+					</a>
+				</section>
+				
+				<section>
+					<h2>A Tour of the Front End</h2>
+					<h3>WordPress comes with the default theme Twenty Nineteen</h3>
+					<ul>
+						<li>A sample post on the home page.</li>
+						<li>A sample page</li>
+						<li>A sample comment</li>
+						<li>A sample tag line "Just another WordPress site"</li>
+						<li>A set of sidebar widgets</li>
+					</ul>
+				</section>		
+				
+				<section>
+					<h2>A Tour of the Backend Admin</h2>
+					<h3>Located at: yourdomain.com/wp-admin/ </h3>
+					<p>
+						The admin is divided into 3 areas:
+						<ol>
+							<li>The top menu bar</li>
+							<li>The left-hand menu used to navigate to most admin functionality</li>
+							<li>The main content window where most admin functionality is performed</li>
+						</ol>
+					</p>	
+				</section>
+				
+				<section>
+					<h2>A Tour of the Backend Admin</h2>
+					<h3>Located at: yourdomain.com/wp-admin/ </h3>
+
+					<p>
+						<strong>Tip:</strong> You can change what's displayed on an admin page by clicking on the "screen options" tab in the upper right corner.
+					</p>
+
+					<p>
+						<strong>Another Tip:</strong> Open the front end of your site in one browser tab and the backend in another so you can easily switch between the 2 as you make changes to your site.
+					</p>
+				</section>
+				
+				<section>
+					<h2>Adjusting Site Settings</h2>
+					<h3>The Settings menu</h3>
+
+					<ul>
+						<li><strong>General:</strong> Title, tagline, site address, date format, etc.</li>
+						<li><strong>Writing:</strong> Post-related settings</li>
+						<li><strong>Reading:</strong>  Set site home page, # of posts, rss settings and search engine visibility</li>
+						<li><strong>Discussion:</strong> Manage comment settings</li>
+						<li><strong>Media:</strong> Make default image sizes and other media settings</li>
+						<li><strong>Permalinks:</strong> Define the structure of site URLs</li>
+					</ul>
+				</section>
+				
+				<section>
+					<h2>Changing Site Appearance</h2>
+					<h3>The Appearance menu</h3>
+
+					<ul>
+						<li><strong>Themes:</strong> Manage the current theme in use and other installed themes</li>
+						<li><strong>Customize:</strong> Change your theme's appearance and see a preview before going live.</li>
+						<li><strong>Widgets:</strong> Manage widgets you can add to site sidebars or other "widgetized" areas</li>
+						<li><strong>Menus:</strong>  Manage navigation menus</li>
+						<li><strong>Header:</strong> Manage header elements</li>
+						<li><strong>Editor:</strong> Dangerous way to edit theme and plugin flies, sometimes disabled for security</li>
+					</ul>
+				</section>
+				
+				<section>
+					<h2>Changing Site Appearance</h2>
+					<h3>The Customizer</h3>
+
+					<p>
+						Make customizations to your site's appearance and preview them in real time before making them live.
+					</p>
+				</section>				
+				
+				<section>
+					<h2>Adding Content</h2>
+					<h3>Pages and Posts</h3>
+
+					<ul>
+						<li><strong>Pages:</strong> Regular static website pages with content</li>
+						<li><strong>Posts:</strong> Entries (like blog posts) that have a date, categories and tags assigned to them. They can be listed in a particular order (chronologically, alphabetically, etc.) and fed to other sites or blog readers via an RSS feed</li>
+					</ul>					
+					
+					<a href="http://www.chaostoclarity.com/how-wordpress-works-page-vs-post-infographic/" target="_blank">
+						<i class="fa fa-info-circle" aria-hidden="true"></i>
+					</a>
+				</section>
+				
+				<section>
+					<h2>Adding Content</h2>
+					<h3>Pages</h3>
+
+					<ul>
+						<li><strong>Page Title</strong></li>
+						<li><strong>Permalink:</strong> Manage the name of the page URL</li>
+						<li><strong>Page Content</strong></li>
+						<li><strong>Revisions:</strong> View and restore previous versions of the page</li>
+						<li><strong>Custom Fields:</strong> Additional fields (display requires theme support)</li>
+						<li><strong>Discussion:</strong> Turn comments on or off for this page</li>
+						<li><strong>Comments:</strong> Displays current page comments</li>
+						<li><strong>Slug:</strong> Manage the name of the page slug</li>
+						<li><strong>Author:</strong> Switch between post authors (display requires theme support)</li>
+					</ul>
+				</section>
+				
+				<section>
+					<h2>Adding Content</h2>
+					<h3>Pages</h3>
+
+					<ul>
+						<li><strong>Publish</strong> Change publish status and visibility settings and view revisions</li>
+						<li><strong>Page Attributes:</strong> Assign a page "parent", choose template and sort order</li>
+						<li><strong>Featured Image:</strong> Assign an image to page (requires theme support)</li>
+					</ul>
+				</section>
+				
+				<section>
+					<h2>Adding Content</h3>
+
+					<p>
+						<img src="img/gutenberg.gif" class="plain" alt="">
+					</ul>
+				</section>
+				
+				<section>
+					<h2>Adding Content</h2>
+					<h3>Posts</h3>
+
+					<ul>
+						<li><strong>Excerpt</strong> Determine an excerpt for a post (display requires theme support)</li>
+						<li><strong>Send Trackbacks:</strong> More <a href="http://codex.wordpress.org/Introduction_to_Blogging#Trackbacks" target="_blank">information on trackbacks</a></li>
+						<li><strong>Format:</strong> Choose between several post formats (display requires theme support)</li>
+						<li><strong>Categories and Tags:</strong> Assign categories and tags to allow posts to be organized by subject</li>
+					</ul>
+				</section>
+				
+				<section>
+					<h2>Adding Content</h2>
+					<h3>Tip</h3>
+
+					<p>
+						Use the bulk editor on the page or post list to make edits to multiple pages or posts at a time (like removing comments).
+					</p>
+				</section>
+
+				<section>
+					<h2>Managing Menus</h2>
+					<h3>Appearance > Menus</h3>
+					
+					<p>
+						Easily create and manage navigation menus
+					</p>
+
+					<ul>
+						<li><strong>Create menus:</strong> Enter a menu name and click "Create Menu"</li>
+						<li><strong>Add pages:</strong> Add existing pages, custom links or category pages</li>
+						<li><strong>Order Pages:</strong> Drag and drop your pages menu items in the desired order. Indent pages to make them children of other pages</li>
+						<li><strong>Assign Menu to Theme location:</strong> When the menu is ready, assign it to a theme location and click "Save Menu."</li>
+						<li><strong>Manage Locations Tab:</strong> Assign menus to theme locations</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Managing Menus</h2>
+					<h3>The Customizer</h3>
+					
+					<p>
+						Manage your menus AND pages at the same time.
+					</p>
+				</section>
+					
+				<section>
+					<h2>Managing Comments</h2>
+					<h3>The Comments menu</h3>
+
+					<p>
+						View, approve, delete and mark comments as spam.
+					</p>
+				</section>
+				
+				<section>
+					<h2>Managing Media</h2>
+					<h3>The Media menu</h3>
+
+					<p>
+						View all files that have been uploaded to the site via the content editor. Add, edit and delete files.
+					</p>
+				</section>
+				
+				<section>
+					<h2>Managing Users</h2>
+					<h3>The Users menu</h3>
+
+					<ul>
+						<li><strong>Manage existing users:</strong> Edit all user data or delete users</li>
+						<li><strong>Add new users:</strong> Assign new users to site</li>
+						<li><strong>Your Profile:</strong> Edit your own profile settings</li>
+					</ul>
+				</section>	
+				
+				<section>
+					<h2>Managing Users</h2>
+					<h3>User roles</h3>
+					
+					<p>
+						Users can be given <a href="http://codex.wordpress.org/Roles_and_Capabilities" target="_blank">certain levels of editing privileges</a>. 
+					</p>
+
+					<ul>
+						<li><strong>Administrator:</strong> access to all the administration features within a single site</li>
+						<li><strong>Editor:</strong> ability to publish and manage posts including the posts of other users</li>
+						<li><strong>Author:</strong> ability to publish and manage their own posts</li>
+						<li><strong>Contributor:</strong> ability to write and manage their own posts but cannot publish them</li>
+						<li><strong>Subscriber:</strong> ability to only manage their profile</li>
+					</ul>
+				</section>
+				
+				<section>
+					<h2>What are Plugins?</h2>
+					<blockquote>
+						Plugins can extend WordPress to do almost anything you can imagine.
+					</blockquote>
+				</section>
+				
+				<section>
+					<h2>Plugins are</h2>
+					<h3>Powerful</h3>
+					<p>
+						Plugins are used to add functionality to WordPress. Examples include ecommerce, SEO, forms, photo galleries, social media sharing, forums and much more!
+					</p>
+				</section>
+				
+				<section>
+					<h2>Plugins are</h2>
+					<h3>Often Free</h3>
+					<p>
+						Right now there are 56,303 free plugins in the official <a href="http://wordpress.org/plugins/" target="_blank">WordPress Plugin Directory</a>.
+					</p>
+				</section>
+				
+				<section>
+					<h2>Plugins</h2>
+					<h3>Plugins menu</h3>
+					<p>
+						WordPress comes with 2 plugins:
+						<ul>
+							<li><strong>Akismet:</strong> Protects your blog from comment and trackback spam. This plugin requires an <a href="http://akismet.com/wordpress" target="_blank">Akismet key</a></li>
+							<li><strong>Hello Dolly:</strong> Adds a random lyric from "Hello Dolly" to the upper right-hand corner of admin screen.</li>
+						</ul>
+					</p>
+				</section>
+				
+				<section>
+					<h2>Plugins</h2>
+					<h3>Managing Plugins</h3>
+					<p>
+						<ul>
+							<li><strong>Activate/Deactivate:</strong> Turns plugins "on" and "off"</li>
+							<li><strong>Edit:</strong> Ability to edit plugin files NOT RECOMMENDED</li>
+							<li><strong>Delete:</strong> Delete deactivated plugins</li>
+						</ul>
+					</p>
+				</section>
+				
+				<section>
+					<h2>Plugins</h2>
+					<h3>Finding plugins</h3>
+					<ul>
+						<li>Searching under Plugins > Add New</li>
+						<li>Browsing the <a href="http://wordpress.org/plugins/" target="_blank">WordPress Plugin Directory</a></li>
+					</ul>
+				</section>
+				
+				<section>
+					<h2>Plugins</h2>
+					<h3>3 ways to install plugins</h3>
+					<ul>
+						<li>Clicking "Install Now" from "Install Plugins" search results</li>
+						<li>Download a plugin zip file and install it via the "Upload" link</li>
+						<li>Unzip the plugin files and upload it via FTP to the<br /> <code>/wp-content/plugins</code> folder</li>
+					</ul>
+				</section>
+				
+				<section>
+					<h2>Plugins</h2>
+					<h3>Usage tip</h3>
+					<p>
+						Plugins often use <a href="http://codex.wordpress.org/Shortcode" target="_blank">shortcodes</a> to add content to a page or post.
+					</p>
+					<p>
+						For example, the plugin <a href="http://wordpress.org/plugins/contact-form-7/" target="_blank">Contact Form 7</a> uses the shortcode <code>[contact-form-7 id="105"]</code> (the ID is the ID of the form) to allow you a form to a page or post. 
+					</p>
+					<p>
+						These will start getting replaced with Gutenberg blocks.
+					</p>
+				</section>
+				
+				<section>
+					<h2>Plugins</h2>
+					<h3>Security tip - Vet plugins first</h3>
+					<ul>
+						<li><strong>Ratings</strong> Read the plugin reviews</li>
+						<li><strong>Maintenance</strong> Check to see it the plugin has regular updates</li>
+						<li><strong>Support</strong> See if the plugin developers regularly answer support questions</li>
+					</ul>
+				</section>
+				
+				<section>
+					<h2>What are Themes?</h2>
+					<blockquote>
+						A WordPress theme determines the overall design and layout of a WordPress website.
+					</blockquote>
+				</section>
+				
+				<section>
+					<h2>Themes are</h2>
+					<h3>Powerful</h3>
+					<p>
+						In addition to defining how a site looks, it can also with with specific plugins to enhance functionality.
+					</p>
+				</section>
+				
+				<section>
+					<h2>Themes are</h2>
+					<h3>Often Free</h3>
+					<p>
+						Right now there are over 3,615 free themes in the official <a href="http://wordpress.org/themes/" target="_blank">WordPress Themes Directory</a>.
+					</p>
+				</section>
+				
+				<section>
+					<h2>Managing Themes</h2>
+					<h3>Appearance > Themes</h3>
+					<p>
+						WordPress currently comes with 2 themes:  Twenty Seventeen and Twenty Sixteen.
+					</p>
+					<p>
+						Under <strong>Appearance > Themes</strong> is a list of all installed themes. The theme in use is labeled "Active."
+					</p>
+				</section>
+				
+				<section>
+					<h2>Themes</h2>
+					<h3>Appearance > Themes</h3>
+					<p>
+						<strong>"Live Preview" before you activate or customize a theme</strong>
+					</p>
+					<p>
+						Click "Customize" under the current theme or "Live Preview" under an available theme to see how a new or modified theme will look before you commit to it.
+					</p>
+				</section>
+				
+				<section>
+					<h2>Themes</h2>
+					<h3>Finding new themes</h3>
+					<ul>
+						<li>Searching under the "Add Themes" tab</li>
+						<li>Browsing the <a href="http://wordpress.org/themes/" target="_blank">WordPress Themes Directory</a></li>
+					</ul>
+				</section>
+				
+				<section>
+					<h2>Themes</h2>
+					<h3>3 ways to install themes</h3>
+					<ul>
+						<li>Install right from the "Install Themes" tab</li>
+						<li>Download a theme zip file and install it via the "upload theme" link</li>
+						<li>Unzip the theme files and upload it via SFTP, FTP, Git, etc. to the<br /> <code>/wp-content/themes</code> folder</li>
+					</ul>
+				</section>
+				
+				<section>
+					<h2>Resources</h2>
+					<h3>Attend a WordCamp</h3>
+
+					<p>
+						WordCamps are affordable, informal, community-organized WordPress conferences held all over the world. They are packed with workshops geared toward WordPress users, designers and developers.
+					</p>
+					
+					<p>
+						<a href="http://central.wordcamp.org/" target="_blank">central.wordcamp.org</a>
+					</p>
+				</section>
+
+				
+				<section>
+					<h1>THE END</h1>
+
+					<h4>Thank you!</h4>
+				</section>
+
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				controls: false,
+				progress: false,
+				history: true,
+				center: true,
+				transition: 'fade',
+				transitionSpeed: 'fast',
+				width: 1170,
+				autoPlayMedia: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true }
+				]
+			});
+		</script>
+	</body>
+</html>
